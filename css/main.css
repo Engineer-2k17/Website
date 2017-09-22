@@ -1,0 +1,94 @@
+@font-face {
+    font-family: CovesLight;
+    src: url("/fonts/Coves-Light.ttf")  /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: CovesBold;
+    src: url("/fonts/Coves-Bold.ttf")  /* Safari, Android, iOS */
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #448AFF, #fff);
+    margin: 0;
+    font-family: CovesLight
+}
+
+.page-title {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.title-text {
+    align-self: center;
+    font-size: 7em;
+    color: white;
+    font-weight: 300;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.sponsors-list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10% 10px 10%;
+}
+
+.main-sponsor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-sponsor {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    /*align-content: center;*/
+    text-align: center;
+
+}
+
+.sponsor-logo {
+    max-width: 50%;    
+    align-self: center;
+}
+
+.footer {
+    padding: 0.5em 0.5em;
+    display: flex;
+    max-width: 100vw;
+    background: #222;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 850px) {
+    .title-text {
+        font-size: 5em;
+    }
+    .other-sponsor {
+        width: calc(50%);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .other-sponsor {
+        width: 100%;
+    }
+    .title-text {
+        font-size: 3em;
+    }
+}
