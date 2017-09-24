@@ -159,6 +159,69 @@ body {
     width: 1.2em;
 }
 
+.page{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top:0px;
+}
+.fade_out{
+    opacity: 1;
+}
+.fade_in{
+    opacity: 0;
+}
+.buffer{
+    height: 200vh;
+}
+.main_title {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.bottom,footer{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu_box ul li{
+    padding: 10px;
+    height: 20vh;
+}
+.menu_box ul li div{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+ul.left{
+    text-align: left;
+}
+ul.right{
+    text-align: right;
+}
+.menu_box {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.menu_box ul {
+    list-style-type: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 100vh;
+}
 
 @media only screen and (max-width: 850px) {
     .title-text {
